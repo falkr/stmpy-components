@@ -200,18 +200,16 @@ class TimerManagerComponent:
 
 
 # logging.DEBUG: Most fine-grained logging, printing everything
-# logging.INFO: Only the most important informational log items
-# logging.WARN: Show only warnings and errors.
-# logging.ERROR. Show only error messages.
+# logging.INFO:  Only the most important informational log items
+# logging.WARN:  Show only warnings and errors.
+# logging.ERROR: Show only error messages.
 debug_level = logging.DEBUG
-logger = logging.getLogger('__main__')
-
-
+logger = logging.getLogger(__name__)
 logger.setLevel(debug_level)
-# INFO: Print less than debugging.
 ch = logging.StreamHandler()
 ch.setLevel(debug_level)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)-12s - %(levelname)-8s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
+
 t = TimerManagerComponent()
