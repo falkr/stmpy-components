@@ -1,8 +1,10 @@
 # STMPY Components
 
-This repository shows some example how to build components in Python based
+This repository shows some examples how to build components in Python based
 on MQTT for communication, JSON for serialization and STMPY for the
 implementation of state machines.
+
+The code examples are given for educational purposes, not professional deployment.
 
 
 ## Installation and Dependencies
@@ -19,7 +21,6 @@ commands and reacts. The component realizes a manager for timers that can be
 started from a voice assistant.
 
 Documented source code: https://falkr.github.io/stmpy-components/TimerManager.m.html
-
 
 
 ## MQTT Paho
